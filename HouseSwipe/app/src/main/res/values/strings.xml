@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">HouseSwipe</string>
+    <string name="background_description">background image collage</string>
+    <string name="sign_up_btn_text">SIGN UP</string>
+    <string name="login_btn_text">LOGIN</string>
+    <string name="facebook_btn_text">LOGIN with FaceBook</string>
+    <string name="gmail_btn_text">LOGIN with GMail</string>
+    <string name="logoDescription">House Swipe Logo</string>
+    <string name="email">Email</string>
+    <string name="passwordHint">Password</string>
+    <string name="reenterHint">Please ReEnter Password</string>
+    <string name="name">Name</string>
+    <string name="firstName">First Name</string>
+    <string name="lastName">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="settingTitle">Account Settings</string>
+    <string name="minPriceHint">Min Price $</string>
+    <string name="maxPriceHint">Max Price $</string>
+    <string name="priceTitle">Price</string>
+    <string name="zip">Zip Code</string>
+    <string name="dist">Distance (Miles)</string>
+    <string name="location">Location</string>
+    <string name="saveBtn">Save</string>
+    <string name="cancelBtn">Cancel</string>
+    <string name="contentInfoGear">Gear</string>
+    <string name="loadingSignIn">Signing In Please Wait</string>
+    <string name="loadingCreateUser">Creating User Profile</string>
+    <string name="landingTitle">Home</string>
+    <string name="buying">Buying</string>
+    <string name="renting">Renting</string>
+    <string name="beds">Beds</string>
+    <string name="Baths">Baths</string>
+    <string-array name="arrayYesNo">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="arrayNum">
+        <item value="1">1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5+</item>
+    </string-array>
+</resources>

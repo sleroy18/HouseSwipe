@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "679318426427",
+    "firebase_url": "https://houseswipe-264d9.firebaseio.com",
+    "project_id": "houseswipe-264d9",
+    "storage_bucket": "houseswipe-264d9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:679318426427:android:4eade68fe5b18d90",
+        "android_client_info": {
+          "package_name": "com.seancs445.houseswipe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "679318426427-coiv8qa0bmfbseqg8jogkqfesk6seiod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.seancs445.houseswipe",
+            "certificate_hash": "67116ba9da01ce08fadcfd85b8fca94c482caffd"
+          }
+        },
+        {
+          "client_id": "679318426427-d61usojl0edjbche4oludl4nejqh9mbs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDKFj3veiSsYYNNcWv0PxdiraRN9lYLOuw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "679318426427-d61usojl0edjbche4oludl4nejqh9mbs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

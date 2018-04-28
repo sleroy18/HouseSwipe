@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:showAsAction="always"
+    tools:context=".SettingsActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--<TextView-->
+            <!--android:id="@+id/emailTitle"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:layout_marginTop="25dp"-->
+            <!--android:text="@string/email"-->
+            <!--android:textColor="@color/greenLogo"-->
+            <!--android:textStyle="bold" />-->
+
+            <!--<View-->
+            <!--android:id="@+id/emailLine"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_marginEnd="16dp"-->
+            <!--android:layout_marginStart="16dp"-->
+            <!--android:background="@android:color/darker_gray"-->
+            <!--app:layout_constraintTop_toBottomOf="@id/emailTitle" />-->
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/emailWidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:layout_marginStart="16dp">
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/nameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/editTextEmail">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/firstNameWidget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/editTextFirstName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="@string/firstName"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/lastNameWidget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/editTextLastName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="@string/lastName"
+                        android:inputType="text" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/priceLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/nameLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/minWidget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/editTextMin"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="@string/minPriceHint"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/maxWidget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/editTextMax"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="@string/maxPriceHint"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/locationLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/priceLayout">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/zipWidget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/editTextZip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="@string/zip"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/distWidget"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_weight="0.5">
+
+                    <EditText
+                        android:id="@+id/editTextDist"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="8"
+                        android:hint="@string/dist"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/buyRentLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/edgeMargin"
+                android:layout_marginStart="@dimen/edgeMargin"
+                app:layout_constraintTop_toBottomOf="@id/locationLayout">
+
+                <!--<Spinner-->
+                    <!--android:id="@+id/buyingSpinner"-->
+                    <!--android:layout_width="@dimen/constraintWidth"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginEnd="@dimen/innerMargin"-->
+                    <!--android:layout_weight="0.5"-->
+                    <!--android:hint="@string/buying"-->
+                    <!--android:textColorHint="#05ab9a"/>-->
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/buyingSpinner"
+                    android:layout_width="@dimen/constraintWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/innerMargin"
+                    android:layout_weight="0.5"
+                    android:hint="@string/buying"
+                    app:met_floatingLabel="normal" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/rentingSpinner"
+                    android:layout_width="@dimen/constraintWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/innerMargin"
+                    android:layout_weight="0.5"
+                    android:hint="@string/renting"
+                    app:met_floatingLabel="normal" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/bedBathLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/edgeMargin"
+                android:layout_marginStart="@dimen/edgeMargin"
+                app:layout_constraintTop_toBottomOf="@id/locationLayout">
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/bedSpinner"
+                    android:layout_width="@dimen/constraintWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/innerMargin"
+                    android:layout_weight="0.5"
+                    android:hint="@string/beds"
+                    app:met_floatingLabel="normal" />
+
+                <com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner
+                    android:id="@+id/bathSpinner"
+                    android:layout_width="@dimen/constraintWidth"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/innerMargin"
+                    android:layout_weight="0.5"
+                    android:hint="@string/Baths"
+                    app:met_floatingLabel="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/btnLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="4dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_red"
+            android:text="@string/cancelBtn" />
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/button_green"
+            android:text="@string/saveBtn" />
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>
